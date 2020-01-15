@@ -1313,3 +1313,8 @@ Processing by PostsController#index as HTML
 Completed 200 OK in 71ms (Views: 63.2ms | ActiveRecord: 3.5ms)
 
 
+Started GET "/posts" for 70.166.207.5 at 2020-01-15 07:14:04 +0000
+Cannot render console from 70.166.207.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mAuthor Load (0.8ms)[0m  [1m[34mSELECT "authors".* FROM "authors"[0m
