@@ -1288,3 +1288,15 @@ Processing by PostsController#index as HTML
 Completed 200 OK in 109ms (Views: 98.0ms | ActiveRecord: 5.2ms)
 
 
+Started GET "/posts?utf8=%E2%9C%93&author=11&commit=Filter" for 70.166.207.5 at 2020-01-15 07:05:57 +0000
+Cannot render console from 70.166.207.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#index as HTML
+  Parameters: {"utf8"=>"✓", "author"=>"11", "commit"=>"Filter"}
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mAuthor Load (0.8ms)[0m  [1m[34mSELECT "authors".* FROM "authors"[0m
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."author_id" = 11[0m
+  [1m[36mAuthor Load (0.3ms)[0m  [1m[34mSELECT  "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  Rendered posts/index.html.erb within layouts/application (42.3ms)
+Completed 200 OK in 87ms (Views: 55.7ms | ActiveRecord: 3.0ms)
+
+
